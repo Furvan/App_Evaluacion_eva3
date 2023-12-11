@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "745291184675",
+    "project_id": "evaluacion-3-app-movil",
+    "storage_bucket": "evaluacion-3-app-movil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745291184675:android:976b4c9bcb8cf231ee8f96",
+        "android_client_info": {
+          "package_name": "com.example.app_evaluacion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQZvNp-WKhQCpFPkiHYcDRfY6u9YFOupc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

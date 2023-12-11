@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".vistas.HomeFragment">
+
+    <!-- Fondo negro donde ira la informacion de la ultima medicion tiempo real -->
+    <LinearLayout
+        android:id="@+id/llFondo"
+        android:layout_width="300dp"
+        android:layout_height="355dp"
+        android:layout_above="@+id/bConectar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/fondo"
+        android:padding="15dp">
+
+        <!-- Texto que mostrara la medicion -->
+        <TextView
+            android:id="@+id/txDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos de las medidas"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Boton para conectar el medidor de humedad -->
+    <Button
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:id="@+id/bConectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Conectar" />
+
+
+</RelativeLayout>

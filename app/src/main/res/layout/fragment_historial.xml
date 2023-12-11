@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vistas.HistorialFragment"
+    android:background="@drawable/fondo">
+
+    <!-- Fondo negro donde iran los datos -->
+    <LinearLayout
+        android:id="@+id/llFondo"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/fondo"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- Titulo de la vista de las mediciones -->
+        <TextView
+            android:id="@+id/tvDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Datos de humedad:"/>
+
+        <!-- Lista de datos -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <!-- Barra de opciones del CRUD -->
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/Botones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFondo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <!-- Agregar medicion forma manual -->
+        <Button
+            android:id="@+id/bAgregar"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_add"/>
+
+        <!-- Editar datos ya ingresados -->
+        <Button
+            android:id="@+id/bActualizar"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_edit_note"/>
+
+        <!-- Buscar dato en especifico -->
+        <Button
+            android:id="@+id/bBuscar"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_search" />
+
+        <!-- Eliminar dato seleccionado -->
+        <Button
+            android:id="@+id/bBorrar"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_delete"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</RelativeLayout>

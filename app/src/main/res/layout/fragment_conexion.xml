@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.ConexionFragment"
+    android:background="@drawable/fondo">
+
+    <!-- Boton para agregar un medidior -->
+    <Button
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:id="@+id/bConectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bDesconectar"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Conectar" />
+
+    <!-- Boton para desconectar el medidor -->
+    <Button
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:id="@+id/bDesconectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Desconectar" />
+
+</RelativeLayout>

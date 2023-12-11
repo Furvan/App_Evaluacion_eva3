@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iHome"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"/>
+
+    <item
+        android:id="@+id/iLogIn"
+        android:icon="@drawable/ic_person"
+        android:title="Iniciar sesion"/>
+
+    <item
+        android:id="@+id/iConexion"
+        android:icon="@drawable/ic_add"
+        android:title="Conectar/Desconectar dispositivo"/>
+
+    <item
+        android:id="@+id/iHistorial"
+        android:icon="@drawable/ic_history"
+        android:title="Historial"/>
+
+    <item
+        android:id="@+id/iInfo"
+        android:icon="@drawable/ic_info"
+        android:title="Informacion"/>
+
+</menu>
